@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 import tensorflow as tf
 from tensorflow.keras import layers, models
-from tensorflow.keras.optimizers.legacy import Adam
+from tensorflow.keras.optimizers import Adam
 
 
 # LOAD DATASET
