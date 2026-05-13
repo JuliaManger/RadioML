@@ -5,8 +5,6 @@ from sklearn.metrics import confusion_matrix
 import tensorflow as tf
 from tensorflow.keras import layers, models
 from tensorflow.keras.optimizers.legacy import Adam
-from tensorflow.keras.callbacks import ReduceLROnPlateau, EarlyStopping
-
 
 
 # LOAD DATASET
@@ -72,7 +70,7 @@ model.summary()
 history = model.fit(
     X_train, y_train_cat,
     batch_size=1024,
-    epochs=2,
+    epochs=100,
     validation_split=0.1
 )
 
